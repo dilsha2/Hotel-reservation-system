@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MaintenanceContext" prefHeight="544.0" prefWidth="729.0" style="-fx-background-color: #2A3042;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReceptionDashboardFormController">
+   <children>
+      <Label layoutX="290.0" layoutY="14.0" prefHeight="25.0" prefWidth="106.0" text="BLUE OCEAN " textFill="#e1bf15">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="248.0" layoutY="47.0" prefHeight="3.0" prefWidth="191.0" />
+      <ImageView fitHeight="113.0" fitWidth="170.0" layoutX="77.0" layoutY="110.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/bg9.jpg.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="113.0" fitWidth="170.0" layoutX="450.0" layoutY="110.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/bg10.jpg.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="98.0" layoutY="251.0" mnemonicParsing="false" onAction="#roomsReservationOnAction" style="-fx-background-color: #009432;" text="ROOMS RESERVATION" textFill="#dfe6e9">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="461.0" layoutY="250.0" mnemonicParsing="false" onAction="#maintananceOnAction" style="-fx-background-color: #009432;" text="MAINTENANCE ROOM" textFill="#dfe6e9">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <JFXButton layoutX="567.0" layoutY="474.0" onAction="#loginOutOnAction" prefHeight="34.0" prefWidth="106.0" style="-fx-background-color: #0805c4;" text="log Out" textFill="#89c206">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

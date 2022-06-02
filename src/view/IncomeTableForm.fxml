@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="incomeContext" prefHeight="474.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.IncomeTableFormController">
+   <children>
+      <ImageView fitHeight="474.0" fitWidth="749.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/bg8.jpg.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="200.0" layoutY="14.0" prefHeight="36.0" prefWidth="366.0" text="INCOME MONTHLY &amp; ANNUALLY" textFill="#55ff60">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <Separator layoutX="181.0" layoutY="50.0" prefHeight="4.0" prefWidth="388.0" style="-fx-background-color: bLACK;" />
+      <JFXButton layoutX="19.0" layoutY="16.0" onAction="#goBackOnAction" prefHeight="18.0" prefWidth="70.0" style="-fx-background-color: #273c75;" text="HOME" textFill="#fbc531">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="632.0" layoutY="17.0" onAction="#newOnAction" prefHeight="18.0" prefWidth="70.0" style="-fx-background-color: #273c75;" text="+NEW" textFill="#fbc531">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtMonth" labelFloat="true" layoutX="28.0" layoutY="124.0" prefHeight="25.0" prefWidth="72.0" promptText="MONTH" style="-fx-background-color: white;">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtRoomCharge" labelFloat="true" layoutX="143.0" layoutY="124.0" prefHeight="25.0" prefWidth="114.0" promptText="ROOM CHARGE" style="-fx-background-color: white;">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtMealCharge" labelFloat="true" layoutX="300.0" layoutY="124.0" prefHeight="25.0" prefWidth="114.0" promptText="MEAL CHARGE" style="-fx-background-color: white;">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtServiceCharge" labelFloat="true" layoutX="452.0" layoutY="124.0" prefHeight="25.0" prefWidth="114.0" promptText="SERVICE CHARGE" style="-fx-background-color: white;">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnSaving" layoutX="618.0" layoutY="125.0" onAction="#btnSaveChargesOnAction" prefHeight="18.0" prefWidth="70.0" style="-fx-background-color: #273c75;" text="Save" textFill="#f8f3e5">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblIncome" layoutX="8.0" layoutY="169.0" prefHeight="285.0" prefWidth="735.0">
+         <columns>
+            <TableColumn fx:id="colMonth" prefWidth="88.0" text="MONTH" />
+            <TableColumn fx:id="colRoomCharge" prefWidth="97.0" text="ROOM CHARGE" />
+            <TableColumn fx:id="colMealCharge" prefWidth="109.0" text="MEAL CHARGE" />
+            <TableColumn fx:id="colServiceCharge" minWidth="6.0" prefWidth="128.0" text="SERVICE CHARGE" />
+            <TableColumn fx:id="colOption" minWidth="0.0" prefWidth="76.0" text="OPTION" />
+            <TableColumn fx:id="colIncome" minWidth="0.0" prefWidth="124.0" text="MONTHLY INCOME" />
+            <TableColumn fx:id="colAnnuallyIncome" minWidth="0.0" prefWidth="112.0" text="ANUALLY INCOME" />
+         </columns>
+      </TableView>
+      <Button layoutX="28.0" layoutY="81.0" mnemonicParsing="false" onAction="#monthlyIncomeOnAction" text="Monthly Income" />
+      <Button layoutX="604.0" layoutY="81.0" mnemonicParsing="false" onAction="#anuallyIncomeOnAction" text="Annually Income" />
+   </children>
+</AnchorPane>
